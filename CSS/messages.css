@@ -1,0 +1,226 @@
+.sender{
+	display: block;
+	float:right;
+	right:0;
+	height:auto;
+	padding:12px;
+	background:#ffabab;
+	overflow:hidden;
+	margin:5px;
+	border-radius:15px;
+	min-width:10px;
+	display: block;	
+}
+.recipient{
+	display: block;
+	float:left;
+	right:0;
+	height:auto;
+	padding:12px;
+	background:#c1c1c1;
+	overflow:hidden;
+	margin:5px;
+	border-radius:15px;
+	min-width:10px;
+	display: block;
+}
+.timeSent{
+	margin:0;
+	font-size:10px;
+	font-family:var(--tertiary-font);
+}
+#messages::-webkit-scrollbar {
+	width: 1em;
+	border-radius:10px;
+	height:10%;
+}
+ 
+#messages::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
+	border-radius:10px;
+}
+ 
+#messages::-webkit-scrollbar-thumb {
+	background-color: darkgrey;
+	outline: 1px solid slategrey;
+	border-radius:10px;
+}
+
+.message_cover{
+	opacity:1;
+	width:68vw;
+	position:relative;
+	display: table-row-group;
+	
+}
+.sizer{
+	width:68vw;
+}
+.message{
+	margin:0;
+	overflow-wrap: break-word;
+	max-width:50vw;
+	font-family:var(--tertiary-font);
+}
+body{
+	background: var(--background);
+	margin:0;
+	padding:0
+}
+.back_messages{
+	display: block;
+	width:85vw;
+	height:85vh;
+	background: rgba(0,0,0,0.7);
+	margin-top:5vh;
+	margin:0 auto;
+	border-radius:1vw;
+	padding-left:2vw;
+	padding-right:2vw;
+	padding-top:2vh;
+	padding-bottom:2vh;
+	overflow:hidden;
+	position:relative; 
+}
+.container{
+	width:70vw;
+	height:60vh;
+	display:block;
+	background:white;
+	border-radius:1vw;
+	overflow:auto;
+	overflow-x:hidden;
+	display: flex;
+	flex-direction: column-reverse;
+
+}
+.messageInput{
+	width:70vw;
+	height:20vh;
+	margin-top:2.5vh;
+	border-radius:1vw;
+	padding-left:1vw;
+	padding-right:1vw;
+	outline:none !important;
+	font-family:var(--tertiary-font);
+	font-size:20px;
+}
+.messageButton{
+    right:7.5vw;
+	background:orange;
+	display:block;
+	float:right;
+	border-radius:1vw;
+	margin-top:2.5vh;
+	font-family: Albertus;
+	outline:none !important;
+	background:orange;
+	display:block;
+	float:right;
+	width:14vw;
+	height:20vh;
+	white-space:nowrap;
+	font-size:4.5vw;
+	font-family:var(--secondary-font)
+}
+.messageButton:hover{
+	background:#ffae19;
+}
+.recipientProfilePicture{
+	width:14vw;
+	float:right;
+	top:0.5vh;
+	right:1.5vw;
+	border-radius:1vw;
+	display:block;
+	column-count: 2;
+	margin-top:2vh;
+	position:absolute; 
+}
+.enterDivSpacer{
+	width:70vw;
+	font-size:15px;
+}
+.enterDiv{
+	color:white;
+	font-family:helvetica, arail, sans-serif;
+	float:right;
+}
+#enterSubmit{
+	width:16px;
+	height:16px;
+	bottom:2px;
+	margin:0;
+	vertical-align: bottom;
+}
+@media only screen and (max-width: 200mm) {
+	.message{
+		font-size:12pt;
+	}
+	.timeSent{
+		font-size:9pt;
+	}
+	.back{
+		width:100vw;
+		background:var(--background);
+		margin:0;
+	}
+	.recipientProfilePicture{
+		display:none;
+	}
+	.container{
+		width:95%;
+	}
+	.messageButton{
+		width:19.5%;
+		margin-right:5%;
+	}
+	.messageInput{
+		width:75%;
+	}
+	.message_cover{
+		width:90%;        
+	}
+    /* Sizer that is at the bottom of all the messages */
+	.sizer{
+		width:80vw; 
+	}
+}
+@media only screen and (max-width: 830px) {
+	#messageButton{
+		font-size:4.5vw;
+		padding:0.1vw;
+	}
+}
+#height{
+	color:yellow;
+	position:fixed;
+	left:0;
+	top:0;
+	margin-top:20vh;
+	display:none;
+}
+#page{
+	color:yellow;
+	position:fixed;
+	left:0;
+	top:0;
+	margin-top:15vh;
+	display:none;
+}
+#innerHeight{
+	color:yellow;
+	position:fixed;
+	left:0;
+	top:0;
+	margin-top:25vh;
+	display:none;
+}
+#result{
+	color:yellow;
+	position:fixed;
+	left:0;
+	top:0;
+	margin-top:30vh;
+	display:none;
+}
